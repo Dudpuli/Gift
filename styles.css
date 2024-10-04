@@ -1,0 +1,74 @@
+
+
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #ff1493;
+}
+
+.friendship-img {
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #ff1493;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff69b4;
+}
+
+#surprise-message {
+    font-size: 20px;
+    color: #32cd32;
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+#confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    visibility: hidden;
+}
+.confetto {
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    background-color: #ff69b4;
+    opacity: 0.8;
+    animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+          }
